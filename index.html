@@ -9,8 +9,10 @@
     <br>
     <script>
     function run() {
-      var img = document.createElement("IMG");
-      img.src = "image.png";
+      var img = document.createElement("A");
+      img.href = "image.png";
+      img.download = "what do I do";
+      img.text = "clickme";
       document.body.insertBefore(img, document.body.childNodes[4]);
     }
     </script>
